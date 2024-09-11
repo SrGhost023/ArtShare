@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - ArtShare</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../images/LogoApp.png">
+</head>
+<body>
+    <div class="container">
+        <div class="logo-container">
+            <img src="../images/LogoApp.png" alt="ArtShare Logo">
+        </div>
+        
+        <div class="login-container">
+            <form class="login-form" action="procesar_login.php" method="post">
+                <h2>Iniciar Sesión</h2>
+                <input type="text" name="username" placeholder="Correo Electrónico o Nombre de Usuario" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Recordarme</label>
+                </div>
+                
+                <button type="submit" class="login-btn">Iniciar Sesión</button>
+                
+                <a href="recuperar_contraseña.html" class="forgot-password">¿Olvidaste tu contraseña?</a>
+            </form>
+            
+            <div class="register-option">
+                <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+            </div>
+            
+            <footer>
+                <a href="#">Políticas de Privacidad</a> <span>|</span> <a href="#">Términos y Condiciones</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
