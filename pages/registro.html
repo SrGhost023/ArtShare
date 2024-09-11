@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - ArtShare</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="icon" href="../images/LogoApp.png">
+</head>
+<body>
+    <div class="container">
+        <div class="register-container">
+            <form class="register-form" action="../php/procesar_registro.php" method="post">
+                <h2>Registro de Usuario</h2>
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="text" name="username" placeholder="Nombre de Usuario" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <input type="password" name="password" placeholder="Contraseña" required>
+                <button type="submit">Registrar</button>
+                
+                <div class="login-option">
+                    <p>¿Ya tienes una cuenta? <a href="login.html">Inicia Sesión</a></p>
+                </div>
+            </form>
+            
+            <footer>
+                <a href="#">Políticas de Privacidad</a> <span>|</span> <a href="#">Términos y Condiciones</a>
+            </footer>
+        </div>
+        
+        <div class="logo-container">
+            <img src="../images/LogoApp.png" alt="ArtShare Logo">
+        </div>
+    </div>
+
+    <div id="popup-message" class="popup">
+        <span id="popup-message-text"></span>
+        <button class="close-btn" onclick="closePopup()">×</button>
+    </div>
+    
+    <script src="../js/registro.js"></script>
+</body>
+</html>
