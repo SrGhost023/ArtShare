@@ -1,2 +1,1 @@
-# ArtShare
 # frontend
